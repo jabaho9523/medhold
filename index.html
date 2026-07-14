@@ -75,17 +75,16 @@
   <p class="hint">Virker med Claude, ChatGPT, Gemini m.fl. — også gratisudgaverne.<br>Husk: del aldrig CPR-numre med en AI.</p>
 
   <p class="links">
-    <a href="#" id="light" data-file="moduler/M_START.md">Medhold Light (til små/gratis AI'er)</a> ·
-    <a href="Eksempel_Kirsten.md">Se et eksempel</a> ·
-    <a href="D1_Kom_i_gang.md">Guide</a> ·
-    <a href="https://github.com/jabaho9523/medhold/archive/refs/heads/main.zip">Download alle filer</a> ·
-    <a href="[CLAUDE-PROJEKT-LINK]">Åbn direkte i Claude</a>
+    <a href="#" id="light" data-file="moduler/M_START.md">Kopiér Medhold Light (til små/gratis AI'er)</a> ·
+    <a href="laes.html?f=Eksempel_Kirsten.md">Se et eksempel</a> ·
+    <a href="laes.html?f=D1_Kom_i_gang.md">Guide</a> ·
+    <a href="https://github.com/jabaho9523/medhold/archive/refs/heads/main.zip">Download alle filer</a><!-- · <a href="[CLAUDE-PROJEKT-LINK]">Åbn direkte i Claude</a> (aktiveres når projektet er oprettet) -->
   </p>
 </main>
 
 <footer>
   <strong>Medhold</strong> er et gratis initiativ fra <a href="https://nexiuslab.com">Nexius Lab</a> — et sparringsværktøj, ikke juridisk rådgivning. Vigtige frister og beslutninger: tjek altid hos fx <a href="https://www.dukh.dk">DUKH</a> (gratis og uvildig).<br>
-  Feedback: <a href="mailto:feedback@medhold.nu">feedback@medhold.nu</a> · Støt med <a href="https://buymeacoffee.com/BRUGERNAVN">en kop kaffe</a> · v0.1 — 2026-07-14
+  Feedback: <a href="mailto:medhold@nexiuslab.com">medhold@nexiuslab.com</a> · Støt med <a href="https://buymeacoffee.com/jabaho">en kop kaffe</a> · v0.1 — 2026-07-14
 </footer>
 
 <div class="toast" id="toast">Kopieret! Åbn din AI, indsæt teksten, og tryk send.</div>
@@ -115,9 +114,13 @@ async function copyMedhold(file) {
     window.location.href = file; // sidste udvej: åbn filen
   }
 }
-document.getElementById('go').addEventListener('click', () => copyMedhold(document.getElementById('go').dataset.file));
-document.getElementById('light').addEventListener('click', (e) => { e.preventDefault(); copyMedhold('moduler/M_START.md'); });
+function taelKlik(navn) { // anonym event-tælling (GoatCounter, ingen cookies/persondata)
+  if (window.goatcounter && goatcounter.count) goatcounter.count({ path: navn, event: true });
+}
+document.getElementById('go').addEventListener('click', () => { taelKlik('kopier-fuld'); copyMedhold(document.getElementById('go').dataset.file); });
+document.getElementById('light').addEventListener('click', (e) => { e.preventDefault(); taelKlik('kopier-light'); copyMedhold('moduler/M_START.md'); });
 </script>
+<script data-goatcounter="https://medhold.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 
 </body>
 </html>
