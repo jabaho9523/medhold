@@ -62,7 +62,7 @@ Nemmest af alt: brug vores **delte Claude-projekt** [LINK] — klik, og alt er s
 
 ## Feedback og støtte
 
-Materialet er gratis og bliver bedre af at blive brugt. Skriv til **feedback@medhold.nu** med det, der virkede, og det, der drillede. Vil du støtte driften, kan du give en kop kaffe: **[BUYMEACOFFEE-LINK]**.
+Materialet er gratis og bliver bedre af at blive brugt. Skriv til **medhold@nexiuslab.com** med det, der virkede, og det, der drillede. Vil du støtte driften, kan du give en kop kaffe: **https://buymeacoffee.com/jabaho**.
 
 ## Ofte stillede spørgsmål
 
