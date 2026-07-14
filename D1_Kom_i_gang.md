@@ -12,17 +12,18 @@ Det er lavet af pårørende, til pårørende og borgere. Det kræver ingen tekni
 - **Del aldrig CPR-numre** med en AI-tjeneste. Fjern eller overstreg dem i dokumenter, før du deler. Brug initialer i stedet for fulde navne, hvor du kan.
 - Brug en AI-konto med login, og undersøg gerne tjenestens indstillinger for, om dine samtaler bruges til træning (det kan ofte slås fra).
 
-## Du behøver kun én fil: START HER
+## Sådan kommer du i gang — ét klik
 
-Uanset hvad der er sket, er starten den samme:
+Du skal ikke finde eller downloade nogen filer. Det hele starter med én knap:
 
-1. Åbn en AI-tjeneste (se listen nedenfor) og start en **ny samtale**.
-2. Kopiér HELE filen **START HER** ind i samtalen og tryk send.
-3. AI'en viser dig nu en **menu**: *"Jeg har fået et brev" · "Jeg har haft et møde eller opkald" · "Jeg fik afslag" · "Kommunen svarer ikke" · "Jeg ved ikke, hvor jeg skal starte"* … Vælg et tal — eller skriv bare frit med dine egne ord.
-4. Til sidst tilbyder AI'en at skrive din **sagslog**. Send den til dig selv i en mail med emnet "Sagslog [sagens navn]" — så kan du altid finde den igen.
-5. Næste gang: ny samtale → indsæt START HER + din sagslog → vælg "Fortsæt fra sidst".
+1. Gå til forsiden på **medhold.nu** og tryk på knappen **"Kopiér Medhold"**. Nu ligger hele hjælpeteksten automatisk i din udklipsholder.
+2. Åbn en AI-tjeneste (se listen nedenfor) og start en **ny samtale**.
+3. **Sæt teksten ind** i beskedfeltet — hold fingeren nede og vælg "Sæt ind" (mobil), eller tryk Ctrl+V / Cmd+V (computer) — og tryk send.
+4. AI'en viser dig nu en **menu**: *"Jeg har fået et brev" · "Jeg har haft et møde eller opkald" · "Jeg fik afslag" · "Kommunen svarer ikke" · "Jeg ved ikke, hvor jeg skal starte"* … Vælg et tal — eller skriv bare frit med dine egne ord.
+5. Til sidst tilbyder AI'en at skrive din **sagslog**. Send den til dig selv i en mail med emnet "Sagslog [sagens navn]" — så kan du altid finde den igen.
+6. Næste gang: tryk på knappen igen → ny samtale → sæt ind + indsæt din sagslog → vælg "Fortsæt fra sidst".
 
-## De øvrige filer (AI'en siger selv til, når du skal bruge dem)
+## De øvrige hjælpetekster (AI'en siger selv til, når du skal bruge dem — og giver dig linket)
 
 | Situation | Fil |
 |---|---|
@@ -56,7 +57,7 @@ Er du i tvivl: indsæt bare modulet først i hver ny samtale. Det virker overalt
 
 ## Fast opsætning (valgfrit — spar copy-paste)
 
-Bruger du en tjeneste, hvor instruktioner kan gemmes (Claude-projekt, custom GPT, Gem): læg **START HER**, **M0 Grundinstruktion** og **M1 Sagslog** derind som faste instruktioner/filer. Så skal du fremover kun åbne en ny samtale — og indsætte din sagslog.
+Bruger du en tjeneste, hvor instruktioner kan gemmes (Claude-projekt, custom GPT, Gem): hent alle filerne via **"Download alle filer"** på medhold.nu, og læg **START HER**, **M0 Grundinstruktion** og **M1 Sagslog** derind som faste instruktioner/filer. Så skal du fremover kun åbne en ny samtale — og indsætte din sagslog.
 
 Nemmest af alt: brug vores **delte Claude-projekt** [LINK] — klik, og alt er sat op.
 
