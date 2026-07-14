@@ -24,17 +24,27 @@
   footer { font-family:system-ui,sans-serif; font-size:13px; color:var(--dim);
            text-align:center; padding:26px 20px 34px; border-top:1px solid #e5e5e0; }
   footer a { color:var(--accent); }
-  .toast { position:fixed; bottom:26px; left:50%; transform:translateX(-50%); background:var(--ink);
-           color:#fff; font-family:system-ui,sans-serif; font-size:15px; padding:12px 22px;
-           border-radius:6px; opacity:0; transition:opacity .25s; pointer-events:none; max-width:90vw; }
-  .toast.show { opacity:1; }
+  .efter { position:fixed; inset:0; background:rgba(20,20,20,.45); display:none;
+           align-items:center; justify-content:center; padding:20px; z-index:10; }
+  .efter.show { display:flex; }
+  .efter .kort { background:#fff; border-radius:10px; max-width:420px; width:100%;
+                 padding:28px 26px 22px; font-family:system-ui,sans-serif; text-align:left;
+                 box-shadow:0 12px 40px rgba(0,0,0,.18); }
+  .efter h2 { font-family:system-ui,sans-serif; font-size:19px; margin:0 0 4px; }
+  .efter h2 span { color:var(--accent); }
+  .efter ol { margin:14px 0 6px; padding-left:24px; font-size:16px; line-height:1.55; }
+  .efter li { margin-bottom:10px; }
+  .efter a { color:var(--accent); }
+  .efter .note { font-size:13px; color:var(--dim); margin-top:10px; }
+  .efter .luk { margin-top:14px; width:100%; font-family:system-ui,sans-serif; font-size:16px;
+                padding:11px; border:none; background:var(--ink); color:#fff; border-radius:6px; cursor:pointer; }
 </style>
 </head>
 <body>
 
 <main>
   <h1>Ingen skal stå alene<br>med sin sag.</h1>
-  <p class="sub">Medhold gør din egen AI til en saglig hjælper i din sag med det offentlige. Få overblik, kend dine frister, hav et solidt svar klar i dag — og brug energien på det, der betyder noget.</p>
+  <p class="sub">Medhold gør din egen AI til en saglig hjælper i din sag med det offentlige. Få overblik, kend dine frister, hav et solidt svar klar i dag.</p>
 
   <!-- Illustrationen: kaos → dialog → svar. Samme lodrette linje som produktets idé. -->
   <svg viewBox="0 0 420 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fra rodede breve, gennem en samtale, til et færdigt svar">
@@ -87,7 +97,18 @@
   Feedback: <a href="mailto:medhold@nexiuslab.com">medhold@nexiuslab.com</a> · Støt med <a href="https://buymeacoffee.com/jabaho">en kop kaffe</a> · v0.1 — 2026-07-14
 </footer>
 
-<div class="toast" id="toast">Kopieret! Åbn din AI, indsæt teksten, og tryk send.</div>
+<div class="efter" id="efter">
+  <div class="kort">
+    <h2><span>✓</span> Medhold er kopieret</h2>
+    <ol>
+      <li><strong>Åbn din AI</strong> — fx <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a>, <a href="https://chatgpt.com" target="_blank" rel="noopener">chatgpt.com</a> eller <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> — og start en <strong>ny samtale</strong>.</li>
+      <li><strong>Sæt teksten ind</strong> i beskedfeltet (hold fingeren nede og vælg "Sæt ind" — eller tryk Ctrl+V / Cmd+V).</li>
+      <li><strong>Tryk send.</strong> AI'en viser dig en menu — vælg det, der passer, eller skriv med dine egne ord.</li>
+    </ol>
+    <p class="note">Husk: del aldrig CPR-numre med en AI.</p>
+    <button class="luk" id="luk">Forstået — jeg er i gang</button>
+  </div>
+</div>
 
 <script>
 // Fallback-instruktion (light) — bruges KUN hvis den fulde fil ikke kan hentes.
@@ -107,13 +128,13 @@ async function copyMedhold(file) {
   } catch (e) { /* indbygget LIGHT bruges */ }
   try {
     await navigator.clipboard.writeText(text);
-    const t = document.getElementById('toast');
-    t.classList.add('show');
-    setTimeout(() => t.classList.remove('show'), 3500);
+    document.getElementById('efter').classList.add('show');
   } catch (e) {
     window.location.href = file; // sidste udvej: åbn filen
   }
 }
+document.getElementById('luk').addEventListener('click', () => document.getElementById('efter').classList.remove('show'));
+document.getElementById('efter').addEventListener('click', (e) => { if (e.target.id === 'efter') e.target.classList.remove('show'); });
 function taelKlik(navn) { // anonym event-tælling (GoatCounter, ingen cookies/persondata)
   if (window.goatcounter && goatcounter.count) goatcounter.count({ path: navn, event: true });
 }
