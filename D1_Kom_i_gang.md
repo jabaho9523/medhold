@@ -51,13 +51,15 @@ Filerne virker i alle de store AI-tjenester — brug den, du kender, eller den g
 - **Claude** (claude.ai) — har du betalingsudgaven, kan du oprette et *projekt* og lægge M0 + M1 i projektets instruktioner én gang for alle.
 - **ChatGPT** (chatgpt.com) — betalingsudgaven kan gemme filerne i en *custom GPT* eller et *projekt*.
 - **Gemini** (gemini.google.com) — filerne kan lægges i en *Gem*.
-- **Copilot** (copilot.microsoft.com) — indsæt modulet i starten af hver samtale.
+- **Mistral / le Chat** (chat.mistral.ai) — europæisk AI med god gratis-udgave.
+- **Chat.dk** (chat.dk) — dansk AI med al data på danske servere; gratis. God, hvis dataplacering i Danmark er vigtig for dig — men prøv en af de store, hvis svarene bliver for korte eller upræcise.
+- **Copilot** (copilot.microsoft.com) — indsæt teksten i starten af hver samtale.
 
 Er du i tvivl: indsæt bare modulet først i hver ny samtale. Det virker overalt og kræver ingen opsætning.
 
 ## Fast opsætning (valgfrit — spar copy-paste)
 
-Bruger du en tjeneste, hvor instruktioner kan gemmes (Claude-projekt, custom GPT, Gem): hent alle filerne via **"Download alle filer"** på medhold.nu, og læg **START HER**, **M0 Grundinstruktion** og **M1 Sagslog** derind som faste instruktioner/filer. Så skal du fremover kun åbne en ny samtale — og indsætte din sagslog.
+Bruger du en tjeneste, hvor instruktioner kan gemmes (Claude-projekt, custom GPT, Gem): hent alle filerne som zip fra **github.com/jabaho9523/medhold** (grøn "Code"-knap → Download ZIP), og læg **START HER**, **M0 Grundinstruktion** og **M1 Sagslog** derind som faste instruktioner/filer. Så skal du fremover kun åbne en ny samtale — og indsætte din sagslog.
 
 Nemmest af alt: brug vores **delte Claude-projekt** [LINK] — klik, og alt er sat op.
 

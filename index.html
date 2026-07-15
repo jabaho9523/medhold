@@ -44,7 +44,7 @@
 
 <main>
   <h1>Ingen skal stå alene<br>med sin sag.</h1>
-  <p class="sub">Medhold gør din egen AI til en saglig hjælper i din sag med det offentlige. Få overblik, kend dine frister, hav et solidt svar klar i dag.</p>
+  <p class="sub">Medhold er en gratis instruktion, du giver din egen AI — så er den klar med den relevante danske viden til din sag med det offentlige. Få overblik, kend dine frister, hav et solidt svar klar i dag.</p>
 
   <!-- Illustrationen: kaos → dialog → svar. Samme lodrette linje som produktets idé. -->
   <svg viewBox="0 0 420 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fra rodede breve, gennem en samtale, til et færdigt svar">
@@ -82,13 +82,11 @@
   </svg>
 
   <button class="btn" id="go" data-file="medhold_fuld.md">Kopiér Medhold — og sæt det ind i din AI</button>
-  <p class="hint">Virker med Claude, ChatGPT, Gemini m.fl. — også gratisudgaverne.<br>Husk: del aldrig CPR-numre med en AI.</p>
+  <p class="hint">Virker med Claude, ChatGPT, Gemini, Mistral og danske Chat.dk — også gratisudgaverne.<br>Husk: del aldrig CPR-numre med en AI.</p>
 
   <p class="links">
-    <a href="#" id="light" data-file="moduler/M_START.md">Kopiér Medhold Light (til små/gratis AI'er)</a> ·
     <a href="laes.html?f=Eksempel_Kirsten.md">Se et eksempel</a> ·
-    <a href="laes.html?f=D1_Kom_i_gang.md">Guide</a> ·
-    <a href="https://github.com/jabaho9523/medhold/archive/refs/heads/main.zip">Download alle filer</a><!-- · <a href="[CLAUDE-PROJEKT-LINK]">Åbn direkte i Claude</a> (aktiveres når projektet er oprettet) -->
+    <a href="laes.html?f=D1_Kom_i_gang.md">Guide</a><!-- · <a href="[CLAUDE-PROJEKT-LINK]">Åbn direkte i Claude</a> (aktiveres når projektet er oprettet) -->
   </p>
 </main>
 
@@ -101,7 +99,7 @@
   <div class="kort">
     <h2><span>✓</span> Medhold er kopieret</h2>
     <ol>
-      <li><strong>Åbn din AI</strong> — fx <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a>, <a href="https://chatgpt.com" target="_blank" rel="noopener">chatgpt.com</a> eller <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> — og start en <strong>ny samtale</strong>.</li>
+      <li><strong>Åbn din AI</strong> — fx <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a>, <a href="https://chatgpt.com" target="_blank" rel="noopener">chatgpt.com</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a>, <a href="https://chat.mistral.ai" target="_blank" rel="noopener">chat.mistral.ai</a> eller danske <a href="https://chat.dk" target="_blank" rel="noopener">chat.dk</a> — og start en <strong>ny samtale</strong>.</li>
       <li><strong>Sæt teksten ind</strong> i beskedfeltet (hold fingeren nede og vælg "Sæt ind" — eller tryk Ctrl+V / Cmd+V).</li>
       <li><strong>Tryk send.</strong> AI'en viser dig en menu — vælg det, der passer, eller skriv med dine egne ord.</li>
     </ol>
@@ -139,7 +137,6 @@ function taelKlik(navn) { // anonym event-tælling (GoatCounter, ingen cookies/p
   if (window.goatcounter && goatcounter.count) goatcounter.count({ path: navn, event: true });
 }
 document.getElementById('go').addEventListener('click', () => { taelKlik('kopier-fuld'); copyMedhold(document.getElementById('go').dataset.file); });
-document.getElementById('light').addEventListener('click', (e) => { e.preventDefault(); taelKlik('kopier-light'); copyMedhold('moduler/M_START.md'); });
 </script>
 <script data-goatcounter="https://medhold.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 
