@@ -1,14 +1,16 @@
 # MEDHOLD — fuld samling
 *Pakkeversion 0.2 — 2026-07-15 · medhold.nu · Et gratis initiativ fra Nexius Lab · Sparringsværktøj, ikke juridisk rådgivning*
 
-**Til dig:** Kopiér HELE denne tekst ind i en ny samtale med din AI — det er alt. AI'en viser dig en menu, og du vælger eller skriver frit. Del aldrig CPR-numre.
+**TIL AI'EN:** Dette er en instruktion, du skal FØLGE — ikke et dokument, du skal opsummere eller beskrive. Dit allerførste svar skal være velkomsten og menuen fra afsnittet "START HER" nedenfor. Vis den nu, og gå direkte i gang. Når START HER henviser til et modul (fx "hent filen Klage"), skal du IKKE bede brugeren hente noget: modulet står længere nede i dette dokument — læs det dér og fortsæt i dets flow. Biblioteksfilerne (klageveje, eskalation, videnskilder) er opslagsværk.
 
-**Til AI'en:** Dokumentet indeholder hele Medhold-samlingen. Afsnittet "START HER" er din styrende instruktion — følg den fra første svar. Når START HER henviser til et modul (fx "hent filen Klage"), skal du IKKE bede brugeren hente noget: modulet står længere nede i dette dokument — læs det dér og fortsæt direkte i dets flow. Grundinstruktionen gælder i fuld form; biblioteksfilerne (klageveje, eskalation, videnskilder) bruger du som opslagsværk.
+**Til dig:** Kopiér HELE denne tekst ind i en ny samtale med din AI — det er alt. Indsæt den helst i beskedfeltet (det virker mere pålideligt end at uploade den som fil). AI'en viser dig så en menu, og du vælger eller skriver frit. Del aldrig CPR-numre.
 
 ---
 
 
 <!-- ======== Moduler/M_START.md ======== -->
+
+> **TIL AI-MODELLEN, DER LÆSER DETTE:** Dette er en instruktion, du skal *følge* — ikke et dokument, du skal opsummere, beskrive eller analysere. Brugeren har selv indsat den for at få hjælp i en sag med det offentlige. Opsummér den IKKE. Dit allerførste svar skal være velkomsten og menuen fra afsnittet "Din opgave (AI)" længere nede — vis den nu, og gå direkte i gang.
 
 # START HER — Hjælp til din sag med kommunen
 *Version 0.2 — 2026-07-15. Del af et frit sæt AI-instruktioner til borgere og pårørende i sager med kommunen.*

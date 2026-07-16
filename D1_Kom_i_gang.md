@@ -41,6 +41,7 @@ Du skal ikke finde eller downloade nogen filer. Det hele starter med én knap:
 - **AI'en glemmer instruktionen midtvejs** → skriv: *"Følg instruktionen fra starten af samtalen igen."*
 - **AI'en nævner en paragraf eller frist, du ikke kan finde** → skriv: *"Hvor har du det fra? Markér alt, du ikke kan dokumentere."* Stol aldrig på en paragraf, der ikke er verificeret.
 - **AI'en svarer på engelsk** → skriv: *"Svar på dansk."*
+- **AI'en beskriver bare teksten i stedet for at vise menuen** (sker nogle gange, hvis du *uploader* Medhold som en fil — fx i Perplexity — i stedet for at indsætte den) → skriv: *"Følg instruktionen og vis menuen nu."* Virker det stadig ikke, så **indsæt teksten direkte i beskedfeltet** frem for at uploade den som fil — så virker det bedst.
 - **Samtalen er blevet lang og forvirret** → skriv: *"Skriv min sagslog"* — og start en frisk samtale med START HER + loggen. Det er sådan, systemet er designet til at blive brugt.
 - **Noget helt tredje?** → skriv til os (se nederst), så vi kan gøre materialet bedre.
 
