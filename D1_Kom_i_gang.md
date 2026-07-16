@@ -1,5 +1,5 @@
 # Kom i gang — AI-hjælp til din sag med kommunen
-*Version 0.1 — 2026-07-14*
+*Version 0.2 — 2026-07-15*
 
 ## Hvad er det her?
 
@@ -19,7 +19,7 @@ Du skal ikke finde eller downloade nogen filer. Det hele starter med én knap:
 1. Gå til forsiden på **medhold.nu** og tryk på knappen **"Kopiér Medhold"**. Nu ligger hele hjælpeteksten automatisk i din udklipsholder.
 2. Åbn en AI-tjeneste (se listen nedenfor) og start en **ny samtale**.
 3. **Sæt teksten ind** i beskedfeltet — hold fingeren nede og vælg "Sæt ind" (mobil), eller tryk Ctrl+V / Cmd+V (computer) — og tryk send.
-4. AI'en viser dig nu en **menu**: *"Jeg har fået et brev" · "Jeg har haft et møde eller opkald" · "Jeg fik afslag" · "Kommunen svarer ikke" · "Jeg ved ikke, hvor jeg skal starte"* … Vælg et tal — eller skriv bare frit med dine egne ord.
+4. AI'en viser dig nu en **menu**: *"Brev eller afgørelse" · "Opkald eller møde" · "Partshøring" · "Afslag" · "Aktindsigt" · "Lav en sagslog" · "Andet"* … Vælg et tal — eller skriv bare frit med dine egne ord, hvad der er sket.
 5. Til sidst tilbyder AI'en at skrive din **sagslog**. Send den til dig selv i en mail med emnet "Sagslog [sagens navn]" — så kan du altid finde den igen.
 6. Næste gang: tryk på knappen igen → ny samtale → sæt ind + indsæt din sagslog → vælg "Fortsæt fra sidst".
 
